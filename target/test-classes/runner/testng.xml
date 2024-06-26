@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="com.api.Listeners.CustomListener"/>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="Simple Grocery API">
+        <classes>
+            <class name="com.api.Testcases.APIStatusTest"/>
+            <class name="com.api.Testcases.GetAllProductsTest"/>
+            <class name="com.api.Testcases.GetSingleProductTest"/>
+            <class name="com.api.Testcases.CreateCartTest"/>
+            <class name="com.api.Testcases.GetACartTest"/>
+        </classes>
+    </test>
+</suite>
